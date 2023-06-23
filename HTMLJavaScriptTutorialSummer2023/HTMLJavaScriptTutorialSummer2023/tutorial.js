@@ -55,12 +55,12 @@ window.dogButtonFunc = function() {
     Text Input
 */
 
-// Disable submission
-
+// Disable submission which causes page refresh.
 document.getElementById("textform").addEventListener("submit", function(event) {
     event.preventDefault();
 });
 
+// Changes <p> with id="enteredtext" into whatever was typed.
 document.getElementById("textinput").onchange = function(event) {
     document.getElementById("enteredtext").innerText = event.target.value
 }
