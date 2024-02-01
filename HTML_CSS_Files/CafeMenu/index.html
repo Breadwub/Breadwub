@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!---
+            Title element:
+            - One of many elements to provide extra info not visible on the web page.
+            - Useful for search engines & how to display page.
+        -->
+        <title>Cafe Menu</title>
+        <!--
+            Tells browser how to encode characters for the page.
+        -->
+        <meta charset="utf-8">
+        <!--
+            Makes styling of page look similar on mobile, desktop, laptop, etc.
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--
+            Link styles.css to index.html
+        -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <!--
+            'div' element:
+            - Mainly for design layout purposes.
+        -->
+        <div class="menu">
+            <main>
+                <h1>CAMPER CAFE</h1>
+                <p class="established">Est. 2020</p>
+                <!--
+                    'hr' element:
+                    - Displays a divider between sections of different content.
+                -->
+                <hr>
+                <section>
+                    <h2>Coffee</h2>
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
+                    <!--
+                        'arcticle' element:
+                        - contain multiple elements with related information.
+                        - e.g. coffee flavor and price
+                    -->
+                    <article class="item">
+                        <!--
+                            p elements on the same line, stay on the same line?
+                        -->
+                        <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Mocha</p><p class="price">4.50</p>
+                    </article>
+                </section>
+                <section>
+                    <h2>Desserts</h2>
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+                    <article class="item">
+                        <p class="dessert">Donut</p><p class="price">1.50</p>
+                    </article>
+                    <article class="item">
+                        <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+                    </article>
+                    <article class="item">
+                        <p class="dessert">Cheesecake </p><p class="price">3.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+                    </article>
+                </section>
+            </main>
+            <hr class="bottom-line">
+            <footer>
+                <p><a href="https://www.freecodecamp.org">Visit our website</a></p>
+                <p class="address">123 Free Code Camp Drive</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+/*
+    Style element(s) like this:
+    element1, element2, ... {
+        property: value;
+    }
+    ^ This is called a "selector"
+    - Different types of selectors:
+        - type selectors: body, div, h1, h2, ...
+        - id selectors: id="menu" in html, #menu in css 
+        - class selectors: class="menu" in html, .menu in css
+            - specific element in class selector: .item p
+            - Multiple classes: .class1, .class2, { }
+*/
+h1, h2, p {
+    text-align: center;
+}
+
+/*
+    - Fallback value = value used when the inital value is not found.
+        - Example: font-Family: Impact, serif 
+*/
+h1, h2 {
+    font-family: Impact, serif;
+}
+
+/*
+    There is a default top margin for h1 elements.
+*/
+h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* 
+    - Change font using 'font-family' property.
+*/
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/*
+    hr elements have "borders", default grey edges of the element.
+    These edges can be same/different colors. 
+    Border-width is 1px by default.
+    If you want hr to be 4px tall, then:
+        - 4px = 1px (border-top) + 1px(border-bottom) + X
+        - X = 2px
+*/
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+/*
+    img elements are "like" inline elements.
+    using display: block; to make it behave like a block element.
+*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+/*
+    - # to define an 'id' selector to target a SPECIFIC element.
+    - . to define a clas selector to style certain elements.
+
+    - In this case, our div has id="menu"
+
+    - Center #menu horizontally by adding:
+        - margin-left: auto;
+        - margin-right: auto;
+    - Think of the margin as invisible space around an element. 
+*/
+/* 
+    Padding = Space between the element and content
+    Margin = Space around the element
+*/
+/* 
+    Add a 'max-width' property to prevent something from growing too large/wide.
+*/
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/* 
+    - Inline-block displays elements on the same line.
+    - .item p --> affects all p elements inside the element with class="item"
+*/
+.item p {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.established {
+    font-style: italic;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+/* Pseudo-selector */
+a:visited {
+    color: black;
+}
+  
+a:hover {
+    color: brown;
+}
+
+/* When the link is clicked on */
+a:active {
+    color: brown ;
+}
+

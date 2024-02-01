@@ -105,7 +105,10 @@
                         <!-- For the location specified in the 'action' attribute to access a form's data, 
                             you must give the 'input' element a 'name' attribute and give the attribute a value that represents the data. 
                             For example, an email address text field:    <input type="text" name="email">-->
-                        <!-- -->
+                        <!-- Form data for buttons are based on 'name' and 'value' attributes.
+                            No 'value' attribute -> form data will have "indoor-outdoor = on" -> not useful when you have multiple buttons.
+                            with 2 radio buttons we add: value="indoor" and value="outdoor", 
+                            form data sent will have: "indoor-outdoor = indoor" or "indoor-outdoor = outdoor"-->
                         
                         <!-- The 'input' element allows you several ways to collect data from a web form.
                             'input' is a self-closing tag.-->
