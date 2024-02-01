@@ -5,9 +5,9 @@
     }
     ^ This is called a "selector"
     - Different types of selectors:
-        - type selectors: body, div, h1, h2, ...
-        - id selectors: id="menu" in html, #menu in css 
-        - class selectors: class="menu" in html, .menu in css
+        1. type selectors: body, div, h1, h2, ...
+        2. id selectors: id="menu" in html, #menu in css 
+        3. class selectors: class="menu" in html, .menu in css
             - specific element in class selector: .item p
             - Multiple classes: .class1, .class2, { }
 */

@@ -1,0 +1,165 @@
+/*--------------TYPE SELECTORS--------------*/
+
+h1 {
+    text-align: center;
+}
+
+
+
+/*--------------CLASS SELECTORS--------------*/
+
+/*
+    2 main color models:
+        1. Additive RGB     (red, green, blue)
+            - For electronic devices
+        2. Subtractive CMYK (cyan, magenta, yellow, black)
+            - For print
+*/
+.container {
+    background-color: rgb(255,255,255);
+    padding: 10px 0;
+}
+
+/*
+    'div' won't show any color because no content inside the div.
+    Can give it height & height to see some color.
+
+    'margin' is a shorthand property.
+    It sets all 'margin-top' 'margin-bottom' 'margin-left' 'margin-right' to the same value.
+    Give 'margin'2 values:
+        - 'margin-top' and 'margin-bottom' get the 1st value
+        - 'margin-left' and 'margin-right' get the 2nd value.
+*/
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.red {
+    background: linear-gradient(
+                rgb(122, 74, 14), 
+                rgb(245, 62, 113), 
+                rgb(162, 27, 27));
+    box-shadow: 0px 0px 20px 0px rgba(83, 14, 14, 0.8);
+
+}
+
+/* 
+    Green keyword is darker than rgb(0,255,0).
+    Use rgb(0,127,0) to get the same shade of green as the keyword.
+*/
+.green {
+    background: linear-gradient(
+                #55680D, 
+                #71F53E, 
+                #116C31);
+    box-shadow: 0px 0px 20px 0px #3B7E20CC;
+}
+
+.blue {
+    background: linear-gradient(
+                hsl(186, 76%, 16%), 
+                hsl(223, 90%, 60%), 
+                hsl(240,56%,42%));
+    box-shadow: 0px 0px 20px 0px hsla(223, 59%, 31%, 0.8);
+}
+
+/* 
+   -  Use 'opacity' to control how transparent something is.
+        - Can use 0-1.0 or 0%-100%
+        - Can also use 'rgba' to set alpha channel value to control transparency/opacity.
+
+    - border-left-style: 'solid' or 'dashed' or 'dotted' or 'double' etc...;
+
+    - 'border-left' is shorthand property;
+        - can alter width, style, and color at the same time.
+
+            border-left: width style color;
+
+*/
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0,0,0,75%);
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve {
+    display: inline-block;
+}
+
+
+
+/*--------------ID SELECTORS--------------*/
+
+/*
+    COLORS:
+    PRIMARY COLORS:
+    RED                 rgb(255,    0,      0)
+    BLUE                rgb(0,      255,    0)
+    GREEN               rgb(0,      0,      255)
+
+    SECONDARY COLORS:
+    YELLOW              rgb(255,    255,    0)
+    CYAN                rgb(0,      255,    255)
+    MAGENTA             rgb(255,    0,      255)
+
+    TERTIARY COLORS:
+    ORANGE              rgb(255,    127,    0)
+    SPRING GREEN        rgb(0,      255,    127)
+    VIOLET              rgb(127,    0,      255)
+    CHARTREUSE GREEN    rgb(127,    255,    0)
+    AZURE               rgb(0,      127,    255)
+    ROSE                rgb(255,    0,      127)
+
+
+    COMPLEMENTARY COLORS:
+    - 2 colors on opposite sides of the color wheel.
+    - Complementary colors combines --> create grey.
+    - Complementar colors placed side-by-side --> strong contrast & appear brighter.
+
+    EXAMPLES:
+    RED-CYAN
+
+    3 WAYS TO APPLY COLOR:
+        1. RGB FUNCTION
+            Example: rgb(127, 127, 127)
+        2. HEXADECIMALS (Hex values: 1-F)
+            Example: #007F00 --> red[00]green[7F]blue[00]
+        3. HSL Color Model (hue, saturation, lightness)
+            3 values:
+                1. hue          0-360, red=0 green=120, blue=240    
+                2. saturation   0%-100%, gray=0% pure_color=100%
+                3. intensity    0%-100%, black=0% neutral=50% white=100%
+    
+    GRADIENTS (Color transitions)
+    - USE 'linear-gradient' to control the direction of transition and what colors to use.
+    - 'linear-gradient' creates an image element, usually paired with 'background' property
+    
+            linear-gradient(gradientDirection, color1, color2, ...);
+            - default gradientDirection: 180deg
+    
+    COLOR-STOPS
+    - Let's you fine-tuine where colors are placed in gradients.
+    - Place px or % value after the color.
+
+                                        ↓ A color-stop
+            linear-gradient(90deg, red 90%, black);
+    
+    SHADOWS
+    - box-shadow propert lets you apply 1+ shadows around an element.
+
+            box-shadow: offsetX offsetY blurRadius spreadRadius color;
+                        (px)    (px)    (px)       (px)
+            - offsetX moves shadow left/right (negative/positive px)
+            - offsetY moves shadow up/down (negative/positive px)
+            - Optional 'spreadRadius' value to spread the reach of the shadow.
+            - optional 'blurRadius' value to blur shadow.
+
+*/
